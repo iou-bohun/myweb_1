@@ -1,0 +1,56 @@
+h1
+{
+  font-size: 100px;
+  font-style: italic;
+
+}
+h2
+{
+  font-size: 30;
+  text-align:center;
+  color:#000000;
+}
+.title
+{
+  font-style: italic;
+  text-align:center;
+  color: #AC58FA;
+  background-color:#ffffff;
+
+}
+.index
+{
+  margin-bottom:0;
+}
+.index .list
+{
+  /* background-color: black; */
+  width: 10%;
+  float: left;
+}
+.index .contents
+{
+  /* background-color: black; */
+  width: 50%;
+  float: right;
+}
+
+ol:hover
+{
+  background-color:#DF3A01;
+}
+ol
+{
+  border-radius:8px; 
+  width:100px;
+  background-color: #f8585b;
+  border: none;
+  color:#fff;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px;
+  cursor: pointer;
+}
