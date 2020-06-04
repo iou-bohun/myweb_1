@@ -10,15 +10,15 @@
 </head>
 
 <body>
+  <!-- top MENUbar start -->
   <header clas=head>
     <div class="container">
       <div class="row">
         <div class="main_menu">
           <span>choi bohun</span>
-            <a class="main_link" href="W3.html">home</a>
+            <a class="main_link" href="index.html">home</a>
             <a class="main_link"href="w1.html">image</a>
             <a class="main_link"href="w2.html">video</a>
-
         </div>
         <div class="main_menu_iconlink">
           <a class="icon_link"target="_blank"href="https://discord.com/channels/@me"><i class="fab fa-discord"></i></a>
@@ -27,14 +27,61 @@
       </div>
     </div>
   </header>
+  <!-- top menubar end -->
+  <div class="banner_video">
+    <video autoplay loop muted="muted" poster="image/banner.jpg">
+      <script> document.getElementById('vid').play(); </script>
+      <source src="image/singapore.webm" type="video/webm">
+      <!-- <source src="image/banner.mp4" type="video/mp4"> -->
+    </video>
+    <div class="travel_text_box">
+      <!-- <p>by choi</p> -->
+      <h4>MY TRAVELS</h4>
+      <h2>visit <a href="https://www.instagram.com/c_bh_99/?hl=ko" target="_blank">here</a> to see more pictures</h2>
+    </div>
+  </div>
+  <div class="containerbox">
+    <div class="wrapper">
+      <h3>places i visited </h3>
+      <h2>Waters make fish every without firmament saw had. Morning air subdue.<br></br> Our. Air very one. Whales grass is fish whales winged.</h2>
+      <div class="visited_place">
+        <div class="img-visited img1">
+          <img src="image/dog.jpg" >
+          <div class="dark_wrapper"></div>
+        </div>
+        <div class="img-visited img2">
+          <img src="image/dog.jpg" >
+          <div class="dark_wrapper"></div>
+        </div>
+        <div class="img-visited img3">
+          <img src="image/dog.jpg" >
+          <div class="dark_wrapper"></div>
+        </div>
+        <div class="img-visited img4">
+          <img src="image/dog.jpg" >
+          <div class="dark_wrapper"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <div class="index">
+
+  <!-- <div class="index">
     <div class="list">
-      <a href="index.html">메인</a>
+      <input type="text" id="input"class="text_input"onkeypress="if(event.keyCode==13){press(); return false;}"><br>
+      <textarea id="output"class="text_input"></textarea>
+      <select id="textarea_color" class="" name="style" onchange="changeColor()">
+        <option value="">--style--</option>
+        <option value="#FE2E2E">red</option>
+        <option value="#0000FF">blue</option>
+        <option value="#FF8000">orange</option>
+      </select>
       <a href="w3.html"><ol>소개</ol><br>
       <a href="w1.html"><ol>이미지</ol></a><br>
       <a href="w2.html"><ol>동영상</ol></a>
     </div>
   </div>
+  <!-- textarea change color js -->
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
