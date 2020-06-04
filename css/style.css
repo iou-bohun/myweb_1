@@ -1,34 +1,52 @@
-body
-{
+@import url("https://fonts.googleapis.com/css?family=Taviraj:300,400,700,300i,400i,700i");
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+body{
   margin: 0px;
 }
-a
-{
+a{
   text-decoration: none;
 }
-.container
-{
-  background-color: #eaefff;
-  padding: 14px 0px;
+p{
+  colo :rgb(0, 0, 0);
+}
+/************************************ top MENUbar start *******************************/
+
+.container{
+  /* height: 35px; */
+  width: 100%;
+  background-color: white;
+  top: 0;
+  position: fixed;
+  z-index: 100;
 }
 .row{
-  margin-left: 20px;
+  width: 100%;
   margin-right: 20px;
+  padding: 10px;
   display: flex;
 }
 .main_menu_iconlink{
-  position: absolute;
-  right: 200px;
+  margin-left: 1000px;
+}
+span{
+  margin-right: 100px;
+  font-size: 0.8em;
 }
 .main_menu_iconlink a{
+  text-align: center;
   color: #0c3e72;
-  font-size:1.35em;
-  margin:8px;
+  font-size:1.4em;
+  margin:12px;
+}
+.main_menu{
+  margin-left: 50px;
 }
 .main_menu a
 {
+  font-size:1em;
   color: #0c3e72;
-  margin: 15px;
+  margin: 18px;
 }
 a.icon_link:hover{
   transition: 0.5s;
@@ -39,23 +57,133 @@ a.main_link:hover
   transition: 0.5s;
   color:#fe5c24;
 }
+.nav{
+  position:fixed;
+  background-color: white;
+  transition: 1s;
+}
+
+/******************************* top_menuBar end *********************************/
+
+
+/******************************* banner part star ***********************************/
+
+.banner_video{
+  margin-top: 30px;
+  height: 730px;
+}
+.banner_video video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url(../image/banner.webm) no-repeat;
+  background-size: cover;
+}
+.travel_text_box{
+  z-index: -1;
+  margin-left: 10px;
+}
+.travel_text_box h4{
+  margin-top: 180px;
+  text-align: center;
+  font-size: 4em;
+  color: white;
+  font-family: "Taviraj", serif;
+  font-weight: 400;
+}
+.travel_text_box a{
+  color:white;
+  font-weight: 300;
+}
+.travel_text_box h2{
+  margin-top: 50px;
+  text-align: center;
+  color:rgb(181, 181, 181);
+}
+/******************************* banner part end ***********************************/
+/******************************* visited_place image part start ******************************/
+.containerbox{
+  width:100%;
+  height:1200px;
+}
+.wrapper{
+  position: absolute;
+  width: 1700px;
+  height: 1150;
+  margin-top: 20px;
+  margin-left:5%;
+}
+.wrapper h3{
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
+  font-weight: 500px;
+  font-size: 3.85em;
+}
+.wrapper h2{
+  text-align: center;
+  font-size: 1.2em;
+}
+.img-visited{
+  width:550px;
+  height:400px;
+  position: absolute;
+  cursor: pointer;
+}
+.img-visited img{
+  box-shadow: 0 1px 10px rgba(0,0,0,0.4);
+  width: inherit;
+  height: inherit;
+}
+.img1{
+  top: 300px;
+  left: 270px;
+}
+.img2{
+  top: 300px;
+  left: 860px;
+}
+.img3{
+  top: 740px;
+  left: 270px;
+}
+.img4{
+  top: 740px;
+  left: 860px;
+}
+.dark_wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  background: rgb(0, 0, 0);
+  opacity: 0;
+  transition:all .6s linear;
+}
+.img-visited:hover .dark_wrapper{
+  opacity:0.25;
+}
+/******************************* visited_place image part end ***********************************/
+
 .index
 {
   margin-bottom:0;
 }
 .index .list
 {
-  /* background-color: black; */
   width: 10%;
   float: left;
 }
 .index .contents
 {
-  /* background-color: black; */
   width: 50%;
   float: right;
 }
-
 ol:hover
 {
   background-color:#DF3A01;
