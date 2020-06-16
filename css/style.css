@@ -60,6 +60,7 @@ a.main_link:hover
 .nav{
   position:fixed;
   background-color: white;
+  opacity: 0.9;
   transition: 1s;
 }
 
@@ -161,12 +162,20 @@ a.main_link:hover
   left: 0;
   width: inherit;
   height: inherit;
-  background: rgb(0, 0, 0);
+  background:black;
   opacity: 0;
   transition:all .6s linear;
 }
 .img-visited:hover .dark_wrapper{
-  opacity:0.25;
+  opacity:0.5;
+}
+.imghovertext{
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+.img-visited:hover .imghovertext{
+  opacity:1;
 }
 /******************************* visited_place image part end ***********************************/
 
